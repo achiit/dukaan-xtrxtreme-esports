@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xyro Esports | Skilled Players Wanted. Gameplay Tests Open Daily.</title>
+<meta name="description" content="Xyro Esports is a competitive gaming organization recruiting skilled players, running gameplay tests and building professional rosters. WhatsApp us to book a test.">
+<meta name="theme-color" content="#14110f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314110f'/%3E%3Cpath d='M14 12h12l6 10 6-10h12L38 32l12 20H38l-6-10-6 10H14l12-20z' fill='%23c8c8c8'/%3E%3Cpath d='M34 8 22 34h9l-4 22 17-28h-10z' fill='%23d4231f'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3efe9;--ink:#1a1715;--red:#c8201c;--silver:#8d8f93;--card:#e9e3da;--night:#14110f;--ff-d:'Playfair Display',Georgia,serif;--ff-b:'Outfit',system-ui,sans-serif;--pad:clamp(20px,5vw,64px)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--ff-b);background:var(--bg);color:var(--ink);line-height:1.6;font-size:17px;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--ff-d);line-height:1.1;font-weight:900}
+h2{font-size:clamp(2rem,5vw,3.4rem);margin-bottom:18px}
+h3{font-size:1.35rem}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--pad)}
+section{padding:clamp(72px,9vw,120px) 0}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:4px;font-weight:600;text-decoration:none;border:2px solid var(--ink);font-size:1rem;cursor:pointer;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:var(--red);border-color:var(--red);color:#fff}
+.btn-call{background:transparent;color:var(--ink)}
+.btn svg{width:18px;height:18px;flex:none}
+/* header */
+header{position:sticky;top:0;z-index:50;background:var(--night);color:var(--bg);border-bottom:3px solid var(--red)}
+.hd{display:flex;align-items:center;gap:16px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--ff-d);font-weight:900;font-size:1.3rem;margin-right:auto}
+.logo svg{width:34px;height:34px}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;font-size:.95rem;opacity:.85}
+nav a:hover{opacity:1;color:#fff}
+.hd .btn{padding:8px 14px;font-size:.9rem;border-color:var(--silver);color:var(--bg)}
+.hd .btn-wa{border-color:var(--red);color:#fff}
+.burger{display:none;background:none;border:2px solid var(--silver);color:var(--bg);width:42px;height:42px;border-radius:4px;font-size:1.3rem;cursor:pointer}
+/* hero */
+.hero{background:var(--night);color:var(--bg);padding:clamp(56px,8vw,110px) 0;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,6vw,4.4rem);margin-bottom:20px}
+.hero p.proof{color:#c9c5bf;max-width:46ch;margin-bottom:30px}
+.hero .btn-call{color:var(--bg);border-color:var(--silver)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero-vis{position:relative;transform:rotate(3deg)}
+.hero-vis svg{width:100%;height:auto;filter:drop-shadow(0 0 40px rgba(200,32,28,.35))}
+.bolt{position:absolute;opacity:.12;pointer-events:none}
+/* trust */
+.trust{background:var(--red);color:#fff;padding:34px 0}
+.trust ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.trust b{display:block;font-family:var(--ff-d);font-size:2.2rem;line-height:1}
+.trust span{font-size:.92rem}
+/* services */
+.s-head{max-width:620px;margin-bottom:48px}
+.s-head p{color:#4a4541}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.card{background:var(--card);padding:28px;border-radius:4px;border-left:5px solid var(--red);display:flex;flex-direction:column;gap:10px;grid-column:span 2}
+.card.big{grid-column:span 3}
+.card.wide{grid-column:span 4}
+.card .ic{width:40px;height:40px}
+.card p{font-size:.97rem;color:#4a4541;flex:1}
+.price{font-weight:700;color:var(--red)}
+.card .btn{align-self:flex-start;padding:10px 16px;font-size:.92rem}
+/* about */
+.about{background:var(--night);color:var(--bg)}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;margin-top:0}
+.avatar{width:150px;height:150px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-family:var(--ff-d);font-size:3.4rem;font-weight:900;border:5px solid var(--silver);margin-bottom:20px}
+.about p{margin-bottom:16px;color:#d4cfc8}
+.about ul{list-style:none;margin-top:8px}
+.about li{display:flex;gap:12px;padding:10px 0;border-top:1px solid #3a3531}
+.about li svg{width:18px;height:18px;flex:none;margin-top:5px}
+/* gallery (layout-breaking: overlaps previous section) */
+.gallery{padding-top:0}
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:12px;margin-top:-50px;position:relative}
+.gal figure{background:var(--night);overflow:hidden;border-radius:4px;grid-column:span 2;grid-row:span 1}
+.gal figure:nth-child(1){grid-column:span 3;grid-row:span 2}
+.gal figure:nth-child(4){grid-column:span 3;grid-row:span 2}
+.gal figure:nth-child(5){grid-column:span 2}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal-title{padding-top:70px}
+/* testimonials */
+.tgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:20px;align-items:start}
+.t{background:var(--card);padding:26px;border-radius:4px}
+.t:nth-child(2){margin-top:36px}
+.stars{display:flex;gap:3px;margin-bottom:10px}
+.stars svg{width:18px;height:18px}
+.t p{margin-bottom:12px}
+.t small{color:#5a5550}
+/* pricing */
+.plist{list-style:none;max-width:760px;margin-left:clamp(0px,8vw,120px)}
+.plist li{display:flex;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:1px solid #cfc8bd;align-items:baseline}
+.plist li span{color:#5a5550;font-size:.92rem;display:block}
+.plist b{white-space:nowrap}
+.note{margin-top:18px;font-size:.92rem;color:#5a5550}
+/* contact */
+.contact{background:var(--card)}
+.cgrid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px}
+iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:4px;background:#d8d2c8}
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:6px 20px;margin:16px 0 24px}
+.cm{list-style:none;display:grid;gap:10px}
+.cm a{font-weight:600}
+/* footer */
+footer{background:var(--night);color:var(--bg);padding:72px 0 110px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr;gap:40px}
+footer h2{font-size:2rem}
+.fl{display:flex;flex-wrap:wrap;gap:8px 20px;list-style:none;margin:16px 0}
+.fl a{text-decoration:none;opacity:.85}
+.fb{margin-top:40px;padding-top:20px;border-top:1px solid #3a3531;font-size:.85rem;color:#a9a49d}
+.fb .bw{text-transform:lowercase;margin-top:6px}
+.bar{display:none}
+@media(max-width:1080px){.hero .wrap{grid-template-columns:1fr 1fr}.card,.card.big{grid-column:span 3}.card.wide{grid-column:span 6}}
+@media(max-width:820px){
+nav{display:none;position:absolute;top:71px;left:0;right:0;background:var(--night);flex-direction:column;padding:18px var(--pad);gap:14px;border-bottom:3px solid var(--red)}
+nav.open{display:flex}
+.burger{display:block}
+.hero .wrap,.about .wrap,.cgrid,.ft{grid-template-columns:1fr}
+.hero-vis{max-width:320px;transform:rotate(2deg)}
+.tgrid{grid-template-columns:1fr}.t:nth-child(2){margin-top:0}
+.trust ul{grid-template-columns:1fr 1fr}
+.plist{margin-left:0}
+.bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--night);border-top:3px solid var(--red)}
+.bar a{padding:16px;text-align:center;font-weight:700;text-decoration:none;color:#fff}
+.bar a:first-child{border-right:1px solid #3a3531}
+.bar a:last-child{background:var(--red)}
+.hd .btn{display:none}
+}
+@media(max-width:520px){
+body{font-size:16px}
+.card,.card.big,.card.wide{grid-column:span 6}
+.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px}
+.gal figure,.gal figure:nth-child(n){grid-column:span 1;grid-row:span 1}
+.gal figure:nth-child(1){grid-column:span 2;grid-row:span 2}
+.hours{grid-template-columns:1fr}
+.cta-row .btn{flex:1;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="bolt" viewBox="0 0 24 32"><path d="M15 0 2 18h8l-3 14 15-20h-9z" fill="#c8201c"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="m12 2 3 7 7 .6-5.3 4.8 1.7 7.4L12 18l-6.4 3.8 1.7-7.4L2 9.6 9 9z" fill="#c8201c"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.100-4.500-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.300 0 .5l-.4.600c-.2.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.400.3.200.5.100.6-.1l.8-1c.2-.3.400-.2.700-.1l1.800.9c.3.100.4.200.5.300 0 .2 0 .8-.2 1.400z"/></symbol>
+<symbol id="ph" viewBox="0 0 24 24"><path fill="currentColor" d="M6.600 10.800a15 15 0 0 0 6.600 6.600l2.200-2.200a1 1 0 0 1 1-.2c1.100.4 2.300.6 3.600.6a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.500a1 1 0 0 1 1 1c0 1.300.2 2.500.6 3.600a1 1 0 0 1-.2 1z"/></symbol>
+<symbol id="xlogo" viewBox="0 0 64 64"><path d="M8 6h14l10 16L42 6h14L40 32l16 26H42L32 42 22 58H8l16-26z" fill="#c9c9cc"/><path d="M36 2 20 34h11l-5 28 22-36H35z" fill="#d4231f"/></symbol>
+</defs>
+</svg>
+
+<header>
+<div class="wrap hd">
+<a class="logo" href="#top" aria-label="Xyro Esports home"><svg><use href="#xlogo"/></svg>Xyro Esports</a>
+<nav id="nav" aria-label="Main">
+<a href="#services">What we do</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a>
+</nav>
+<a class="btn" href="tel:+919876543210"><svg><use href="#ph"/></svg>Call</a>
+<a class="btn btn-wa" href="https://wa.me/919876543210?text=Hi%20Xyro%20Esports%2C%20I%20want%20to%20know%20more%20about%20joining%20the%20team." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a>
+<button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+</div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding-bottom:clamp(56px,8vw,110px)">
+<svg class="bolt" style="width:260px;left:-40px;bottom:-60px" viewBox="0 0 24 32"><use href="#bolt"/></svg>
+<div class="wrap">
+<div>
+<h1>Good at the game? Prove it in a gameplay test and join our roster.</h1>
+<p class="proof">Xyro Esports is a competitive team that recruits experienced players, tests them live and builds rosters for real tournaments. Open every day, 10 AM to 10 PM.</p>
+<div class="cta-row">
+<a class="btn btn-wa" href="https://wa.me/919876543210?text=Hi%20Xyro%20Esports%2C%20I%20want%20to%20book%20a%20gameplay%20test." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Book a gameplay test</a>
+<a class="btn btn-call" href="tel:+919876543210"><svg><use href="#ph"/></svg>Call now</a>
+</div>
+</div>
+<div class="hero-vis" role="img" aria-label="Xyro X-shaped logo with a red lightning bolt">
+<svg viewBox="0 0 320 360"><rect width="320" height="360" rx="10" fill="#0b0908" stroke="#3a3531" stroke-width="3"/><path d="M60 50h46l54 84 54-84h46l-77 128 77 132h-46l-54-86-54 86H60l77-132z" fill="#c9c9cc"/><path d="M190 20 110 190h58l-26 150 114-190h-62z" fill="#d4231f"/><text x="160" y="345" text-anchor="middle" font-family="Outfit,sans-serif" font-weight="700" font-size="20" fill="#8d8f93" letter-spacing="8">XYRO</text></svg>
+</div>
+</div>
+</section>
+
+<div class="trust"><div class="wrap"><ul>
+<li><b>7 days</b><span>open every week</span></li>
+<li><b>12 hrs</b><span>open daily, 10 AM to 10 PM</span></li>
+<li><b>150+</b><span>players tested so far</span></li>
+<li><b>Free</b><span>first gameplay test</span></li>
+</ul></div></div>
+
+<section id="services"><div class="wrap">
+<div class="s-head"><h2>Everything a serious player needs to go pro</h2><p>From the first test to the tournament lobby, we handle recruitment, training and team management.</p></div>
+<div class="grid">
+<article class="card big"><svg class="ic"><use href="#bolt"/></svg><h3>Player recruitment</h3><p>We look for experienced, disciplined players in BGMI, Free Fire and other competitive titles. Message us your game, role and rank.</p><span class="price">Free to apply</span><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20apply%20for%20the%20Xyro%20Esports%20roster." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Apply on WhatsApp</a></article>
+<article class="card"><svg class="ic"><use href="#bolt"/></svg><h3>Gameplay tests</h3><p>A live session where we watch aim, game sense and communication.</p><span class="price">First test free</span><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20book%20a%20gameplay%20test%20slot." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Book a slot</a></article>
+<article class="card"><svg class="ic"><use href="#bolt"/></svg><h3>Roster building</h3><p>Matching roles and playstyles so the squad works as one unit.</p><span class="price">Included with joining</span><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20how%20you%20build%20rosters." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Ask about rosters</a></article>
+<article class="card wide"><svg class="ic"><use href="#bolt"/></svg><h3>Team management and scrims</h3><p>Daily practice schedules, scrim partners, VOD review and one manager you can message any time. We handle the paperwork so you handle the game.</p><span class="price">Included with the roster</span><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20details%20on%20team%20management%20and%20scrims." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Get details</a></article>
+<article class="card"><svg class="ic"><use href="#bolt"/></svg><h3>Tournaments</h3><p>Registration help and travel planning for online and offline events.</p><span class="price">Entry fee as per event</span><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hi%2C%20please%20share%20the%20upcoming%20tournament%20details." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Ask for events</a></article>
+</div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+<div><div class="avatar" aria-hidden="true">YR</div><h3>Yuvraj</h3><p style="margin-top:6px">Founder and team manager</p></div>
+<div>
+<h2>Built by players who got tired of being ignored</h2>
+<p>I started playing competitive in 2021 on a cracked phone with my cousin Ravi. We lost most of our scrims, but we kept showing up at 10 every night and slowly got better.</p>
+<p>Good players in our area never got a proper chance, so in 2023 we turned that habit into Xyro Esports. Every player gets a real test and an honest answer.</p>
+<ul>
+<li><svg><use href="#bolt"/></svg>Live gameplay tests, not just rank screenshots</li>
+<li><svg><use href="#bolt"/></svg>Clear role for every player on the roster</li>
+<li><svg><use href="#bolt"/></svg>No joining fee for players we pick</li>
+<li><svg><use href="#bolt"/></svg>Practice every day from 10 AM to 10 PM</li>
+<li><svg><use href="#bolt"/></svg>One manager who replies on WhatsApp</li>
+</ul>
+</div>
+</div></section>
+
+<section class="gallery" id="gallery" style="padding-top:0;background:var(--bg)"><div class="wrap">
+<div class="gal">
+<figure><img loading="lazy" alt="Gaming setup with glowing keyboard" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&auto=format&fit=crop"></figure>
+<figure><img loading="lazy" alt="Gamer holding a controller" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&auto=format&fit=crop"></figure>
+<figure><img loading="lazy" alt="Dual monitor gaming desk" src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800&auto=format&fit=crop"></figure>
+<figure><img loading="lazy" alt="Esports arena crowd" src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&auto=format&fit=crop"></figure>
+<figure><img loading="lazy" alt="Gaming headset on desk" src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=800&auto=format&fit=crop"></figure>
+<figure><img loading="lazy" alt="Red lit gaming room" src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&auto=format&fit=crop"></figure>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<h2>What players say</h2>
+<div class="tgrid">
+<div class="t"><div class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>Went for the test thinking they would just check my rank. They watched my full match and told me exactly why I was dying in the late zone. Fixed it in a week.</p><small>Aman, Station Road</small></div>
+<div class="t"><div class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>No joining fee, and the manager actually replies on WhatsApp at night. Rare.</p><small>Rohit, Civil Lines</small></div>
+<div class="t"><div class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>My brother and I joined for scrims. Practice timing is fixed so exams were not a problem.</p><small>Sneha, Gandhi Nagar</small></div>
+</div>
+</div></section>
+
+<section id="pricing" style="background:var(--card)"><div class="wrap">
+<h2>Simple, honest pricing</h2>
+<ul class="plist">
+<li><div>First gameplay test<span>Live session, 45 minutes</span></div><b>Free</b></li>
+<li><div>Roster joining fee<span>For players selected after testing</span></div><b>Rs. 0</b></li>
+<li><div>Extra coaching session<span>One-on-one review of your matches</span></div><b>Rs. 199</b></li>
+<li><div>Scrim access (non-members)<span>Per practice day</span></div><b>Rs. 99</b></li>
+<li><div>Tournament entry<span>Charged as per the event organizer</span></div><b>At cost</b></li>
+</ul>
+<p class="note">Prices may change for special events. Message us to confirm before you pay.</p>
+</div></section>
+
+<section class="contact" id="contact" style="background:var(--bg)"><div class="wrap">
+<h2>Find us or message us</h2>
+<div class="cgrid">
+<iframe title="Xyro Esports location map" loading="lazy" src="https://maps.google.com/maps?q=Civil%20Lines%2C%20Lucknow%2C%20Uttar%20Pradesh&output=embed"></iframe>
+<div>
+<p>Civil Lines, Lucknow, Uttar Pradesh</p>
+<div class="hours"><b>Monday to Sunday</b><span>10:00 AM to 10:00 PM</span></div>
+<ul class="cm">
+<li>Phone: <a href="tel:+919876543210">+91 98765 43210</a></li>
+<li>WhatsApp: <a href="https://wa.me/919876543210?text=Hi%20Xyro%20Esports%2C%20I%20have%20a%20question." target="_blank" rel="noopener">Chat now</a></li>
+<li>Email: <a href="mailto:yuvrajices@gmail.com">yuvrajices@gmail.com</a></li>
+<li>Instagram: <a href="https://instagram.com/just_xyro7" target="_blank" rel="noopener">@just_xyro7</a>, <a href="https://instagram.com/eoxgaming20" target="_blank" rel="noopener">@eoxgaming20</a>, <a href="https://instagram.com/mr_yuvraj.13" target="_blank" rel="noopener">@mr_yuvraj.13</a></li>
+</ul>
+</div>
+</div>
+</div></section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="ft">
+<div><h2>Xyro Esports</h2><p>Skilled players wanted. Tests open daily.</p>
+<ul class="fl"><li><a href="#services">What we do</a></li><li><a href="#about">About</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><a class="btn btn-wa" style="font-size:1.1rem;padding:18px 26px" href="https://wa.me/919876543210?text=Hi%20Xyro%20Esports%2C%20I%20want%20to%20join%20the%20team." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Message us on WhatsApp</a></div>
+</div>
+<div class="fb">&copy; <span id="yr">2026</span> Xyro Esports. All rights reserved.<div class="bw">built with ❤️ by 21.coders</div></div>
+</div>
+</footer>
+
+<div class="bar">
+<a href="tel:+919876543210">Call</a>
+<a href="https://wa.me/919876543210?text=Hi%20Xyro%20Esports%2C%20I%20want%20to%20book%20a%20gameplay%20test." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var b=document.getElementById('burger'),n=document.getElementById('nav');
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+document.querySelectorAll('.gal img').forEach(function(i){i.addEventListener('error',function(){i.style.display='none'})});
+</script>
+</body>
+</html>
